@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+:root {
+  --Cgreen: hsl(75, 94%, 57%);
+  --Cwhite: hsl(0, 0%, 100%);
+  --Cgray700: hsl(0, 0%, 20%);
+  --Cgray800: hsl(0, 0%, 12%);
+  --Cgray900: hsl(0, 0%, 8%);
+  --Fsize: 14px;
+  --Ffamily: 'Inter', sans-serif;
+  --Smobile: 375px;
+  --Sdesktop: 1440px;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--Cgray900);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--Ffamily);
+  padding: 2rem 1rem;
+}
+
+.main {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: min(100%, var(--Smobile));
+  background-color: var(--Cgray800);
+  border-radius: 16px;
+  padding: 1.5rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card>img {
+  border-radius: 50%;
+  width: 30%;
+  margin: 2rem;
+}
+
+.pLocation {
+  color: var(--Cgreen);
+  padding: 0.5rem;
+}
+
+.pWrok {
+  padding: 0.5rem;
+  font-size: var(--Fsize);
+  padding: 1rem;
+}
+
+.card>input {
+  width: 80%;
+  margin: 0.4rem;
+  background-color: var(--Cgray700);
+  border: none;
+  color: white;
+  padding: 0.9rem;
+  border-radius: 6%;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.card>input:hover {
+  color: var(--Cgreen);
+}
+
+.card>input:last-child {
+  margin-bottom: 1.5rem;
+}
+
+.attribution {
+  margin-top: auto;
+  padding: 2rem 0;
+}
